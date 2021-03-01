@@ -1,6 +1,8 @@
 import React from 'react';
 import './User.css'
 import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPlus } from '@fortawesome/free-solid-svg-icons'
 const User = (props) => {
     const user = props.user;
     const handleAddFriend = props.handleAddFriend;
@@ -11,7 +13,7 @@ const User = (props) => {
             <h4>{name}</h4>
             <p>{user.email}</p>
             <h5>Salary : ${user.salary}</h5>
-            <button className="btn btn-primary"onClick={()=>handleAddFriend(user)}>Add Friend</button>
+            <button className="btn btn-primary"onClick={()=>handleAddFriend(user)}><FontAwesomeIcon icon={faPlus} /> Add Friend</button>
         </div>
         // <div className="card" style={{width:"18rem"}}>
         //         <img src={user.picture.large} className="card-img-top" alt="..."/>
