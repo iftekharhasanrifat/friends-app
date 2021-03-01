@@ -1,0 +1,13 @@
+.user{
+    margin: 30px;
+    padding:20px;
+    width: 250px;
+    height:350px;
+    border-radius: 15px;
+    /* border: 1px solid green; */
+    box-shadow: 10px 10px 30px darkslategray;
+}
+.user img{
+    border-radius: 50%;
+    border: 5px solid rgb(228, 222, 222);
+}
